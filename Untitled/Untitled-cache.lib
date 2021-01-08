@@ -1,11 +1,44 @@
 EESchema-LIBRARY Version 2.4
 #encoding utf-8
 #
-# Connector_Generic_Conn_02x05_Odd_Even
+# Connector:USB_A
 #
-DEF Connector_Generic_Conn_02x05_Odd_Even J 0 40 Y N 1 F N
+DEF Connector:USB_A J 0 40 Y Y 1 F N
+F0 "J" -200 450 50 H V L CNN
+F1 "Connector:USB_A" -200 350 50 H V L CNN
+F2 "" 150 -50 50 H I C CNN
+F3 "" 150 -50 50 H I C CNN
+$FPLIST
+ USB*
+$ENDFPLIST
+DRAW
+C -150 85 25 0 1 10 F
+C -25 135 15 0 1 10 F
+S -200 -300 200 300 0 1 10 f
+S -60 190 -170 210 0 1 0 F
+S -50 180 -180 230 0 1 0 N
+S -5 -300 5 -270 0 1 0 N
+S 10 50 -20 20 0 1 10 F
+S 200 -105 170 -95 0 1 0 N
+S 200 -5 170 5 0 1 0 N
+S 200 195 170 205 0 1 0 N
+P 4 0 1 10 -125 85 -100 85 -50 135 -25 135 N
+P 4 0 1 10 -100 85 -75 85 -50 35 0 35 N
+P 4 0 1 10 25 110 25 60 75 85 25 110 F
+P 2 1 1 10 -75 85 25 85 N
+X VBUS 1 300 200 100 L 50 50 1 1 W
+X D- 2 300 -100 100 L 50 50 1 1 P
+X D+ 3 300 0 100 L 50 50 1 1 P
+X GND 4 0 -400 100 U 50 50 1 1 W
+X Shield 5 -100 -400 100 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Connector_Generic:Conn_02x05_Odd_Even
+#
+DEF Connector_Generic:Conn_02x05_Odd_Even J 0 40 Y N 1 F N
 F0 "J" 50 300 50 H V C CNN
-F1 "Connector_Generic_Conn_02x05_Odd_Even" 50 -300 50 H V C CNN
+F1 "Connector_Generic:Conn_02x05_Odd_Even" 50 -300 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -36,44 +69,11 @@ X Pin_9 9 -200 -200 150 R 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Connector_USB_A
+# Device:Antenna
 #
-DEF Connector_USB_A J 0 40 Y Y 1 F N
-F0 "J" -200 450 50 H V L CNN
-F1 "Connector_USB_A" -200 350 50 H V L CNN
-F2 "" 150 -50 50 H I C CNN
-F3 "" 150 -50 50 H I C CNN
-$FPLIST
- USB*
-$ENDFPLIST
-DRAW
-C -150 85 25 0 1 10 F
-C -25 135 15 0 1 10 F
-S -200 -300 200 300 0 1 10 f
-S -60 190 -170 210 0 1 0 F
-S -50 180 -180 230 0 1 0 N
-S -5 -300 5 -270 0 1 0 N
-S 10 50 -20 20 0 1 10 F
-S 200 -105 170 -95 0 1 0 N
-S 200 -5 170 5 0 1 0 N
-S 200 195 170 205 0 1 0 N
-P 4 0 1 10 -125 85 -100 85 -50 135 -25 135 N
-P 4 0 1 10 -100 85 -75 85 -50 35 0 35 N
-P 4 0 1 10 25 110 25 60 75 85 25 110 F
-P 2 1 1 10 -75 85 25 85 N
-X VBUS 1 300 200 100 L 50 50 1 1 W
-X D- 2 300 -100 100 L 50 50 1 1 P
-X D+ 3 300 0 100 L 50 50 1 1 P
-X GND 4 0 -400 100 U 50 50 1 1 W
-X Shield 5 -100 -400 100 U 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
-# Device_Antenna
-#
-DEF Device_Antenna AE 0 40 N N 1 F N
+DEF Device:Antenna AE 0 40 N N 1 F N
 F0 "AE" -75 75 50 H V R CNN
-F1 "Device_Antenna" -75 0 50 H V R CNN
+F1 "Device:Antenna" -75 0 50 H V R CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -83,11 +83,11 @@ X A 1 0 -200 100 U 50 50 1 1 I
 ENDDRAW
 ENDDEF
 #
-# Device_C_Small
+# Device:C_Small
 #
-DEF Device_C_Small C 0 10 N N 1 F N
+DEF Device:C_Small C 0 10 N N 1 F N
 F0 "C" 10 70 50 H V L CNN
-F1 "Device_C_Small" 10 -80 50 H V L CNN
+F1 "Device:C_Small" 10 -80 50 H V L CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -101,34 +101,11 @@ X ~ 2 0 -100 80 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Device_Crystal_GND24_Small
+# Device:LED_ARGB
 #
-DEF Device_Crystal_GND24_Small Y 0 40 Y N 1 F N
-F0 "Y" 50 175 50 H V L CNN
-F1 "Device_Crystal_GND24_Small" 50 100 50 H V L CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-$FPLIST
- Crystal*
-$ENDFPLIST
-DRAW
-S -30 -60 30 60 0 1 0 N
-P 2 0 1 15 -50 -30 -50 30 N
-P 2 0 1 15 50 -30 50 30 N
-P 4 0 1 0 -50 -50 -50 -75 50 -75 50 -50 N
-P 4 0 1 0 -50 50 -50 75 50 75 50 50 N
-X 1 1 -100 0 50 R 30 50 1 1 P
-X 2 2 0 -100 25 U 30 50 1 1 P
-X 3 3 100 0 50 L 30 50 1 1 P
-X 4 4 0 100 25 D 30 50 1 1 P
-ENDDRAW
-ENDDEF
-#
-# Device_LED_ARGB
-#
-DEF Device_LED_ARGB D 0 0 Y N 1 F N
+DEF Device:LED_ARGB D 0 0 Y N 1 F N
 F0 "D" 0 370 50 H V C CNN
-F1 "Device_LED_ARGB" 0 -350 50 H V C CNN
+F1 "Device:LED_ARGB" 0 -350 50 H V C CNN
 F2 "" 0 -50 50 H I C CNN
 F3 "" 0 -50 50 H I C CNN
 $FPLIST
@@ -166,11 +143,34 @@ X BK 4 -200 -200 100 R 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Device_R_Pack04
+# Device:L_Small
 #
-DEF Device_R_Pack04 RN 0 0 Y N 1 F N
+DEF Device:L_Small L 0 10 N N 1 F N
+F0 "L" 30 40 50 H V L CNN
+F1 "Device:L_Small" 30 -40 50 H V L CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ Choke_*
+ *Coil*
+ Inductor_*
+ L_*
+$ENDFPLIST
+DRAW
+A 0 -60 20 -899 899 0 1 0 N 0 -80 0 -40
+A 0 -20 20 -899 899 0 1 0 N 0 -40 0 0
+A 0 20 20 -899 899 0 1 0 N 0 0 0 40
+A 0 60 20 -899 899 0 1 0 N 0 40 0 80
+X ~ 1 0 100 20 D 50 50 1 1 P
+X ~ 2 0 -100 20 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Device:R_Pack04
+#
+DEF Device:R_Pack04 RN 0 0 Y N 1 F N
 F0 "RN" -300 0 50 V V C CNN
-F1 "Device_R_Pack04" 200 0 50 V V C CNN
+F1 "Device:R_Pack04" 200 0 50 V V C CNN
 F2 "" 275 0 50 V I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -202,11 +202,11 @@ X R1.2 8 -200 200 100 D 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Device_R_Small
+# Device:R_Small
 #
-DEF Device_R_Small R 0 10 N N 1 F N
+DEF Device:R_Small R 0 10 N N 1 F N
 F0 "R" 30 20 50 H V L CNN
-F1 "Device_R_Small" 30 -40 50 H V L CNN
+F1 "Device:R_Small" 30 -40 50 H V L CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -219,11 +219,11 @@ X ~ 2 0 -100 30 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Diodes_inc_AP7333-33SRG-7
+# Diodes_inc:AP7333-33SRG-7
 #
-DEF Diodes_inc_AP7333-33SRG-7 U 0 40 Y Y 1 F N
+DEF Diodes_inc:AP7333-33SRG-7 U 0 40 Y Y 1 F N
 F0 "U" 0 250 50 H V C CNN
-F1 "Diodes_inc_AP7333-33SRG-7" 50 -600 50 H V C CNN
+F1 "Diodes_inc:AP7333-33SRG-7" 50 -600 50 H V C CNN
 F2 "TO_SOT_Packages_SMD:SOT-23" 50 350 50 H I C CNN
 F3 "https://www.diodes.com/assets/Datasheets/AP7333.pdf" 250 450 50 H I C CNN
 $FPLIST
@@ -237,11 +237,34 @@ X VI 3 -300 50 100 R 50 50 1 1 W
 ENDDRAW
 ENDDEF
 #
-# MCU_Espressif_ESP32-C3
+# Untitled-rescue:Crystal_GND24_Small-Device
 #
-DEF MCU_Espressif_ESP32-C3 U 0 20 Y Y 1 F N
+DEF Untitled-rescue:Crystal_GND24_Small-Device Y 0 40 Y N 1 F N
+F0 "Y" 50 175 50 H V L CNN
+F1 "Untitled-rescue:Crystal_GND24_Small-Device" 50 100 50 H V L CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ Crystal*
+$ENDFPLIST
+DRAW
+S -30 -60 30 60 0 1 0 N
+P 2 0 1 15 -50 -30 -50 30 N
+P 2 0 1 15 50 -30 50 30 N
+P 4 0 1 0 -50 -50 -50 -75 50 -75 50 -50 N
+P 4 0 1 0 -50 50 -50 75 50 75 50 50 N
+X 1 1 -100 0 50 R 30 50 1 1 P
+X 2 2 0 -100 25 U 30 50 1 1 P
+X 3 3 100 0 50 L 30 50 1 1 P
+X 4 4 0 100 25 D 30 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Untitled-rescue:ESP32-C3-MCU_Espressif
+#
+DEF Untitled-rescue:ESP32-C3-MCU_Espressif U 0 20 Y Y 1 F N
 F0 "U" 0 100 50 H V C CNN
-F1 "MCU_Espressif_ESP32-C3" 0 -100 50 H V C CNN
+F1 "Untitled-rescue:ESP32-C3-MCU_Espressif" 0 -100 50 H V C CNN
 F2 "Package_DFN_QFN:QFN-32-1EP_5x5mm_P0.5mm_EP3.45x3.45mm" 0 -1300 50 H I C CNN
 F3 "" 100 -1300 50 H I C CNN
 $FPLIST
@@ -285,11 +308,11 @@ X GPIO4 9 900 400 100 L 50 50 1 1 B
 ENDDRAW
 ENDDEF
 #
-# power_+3V3
+# power:+3V3
 #
-DEF power_+3V3 #PWR 0 0 Y Y 1 F P
+DEF power:+3V3 #PWR 0 0 Y Y 1 F P
 F0 "#PWR" 0 -150 50 H I C CNN
-F1 "power_+3V3" 0 140 50 H V C CNN
+F1 "power:+3V3" 0 140 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 ALIAS +3.3V
@@ -301,11 +324,11 @@ X +3V3 1 0 0 0 U 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #
-# power_GND
+# power:GND
 #
-DEF power_GND #PWR 0 0 Y Y 1 F P
+DEF power:GND #PWR 0 0 Y Y 1 F P
 F0 "#PWR" 0 -250 50 H I C CNN
-F1 "power_GND" 0 -150 50 H V C CNN
+F1 "power:GND" 0 -150 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -314,11 +337,11 @@ X GND 1 0 0 0 D 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #
-# power_VBUS
+# power:VBUS
 #
-DEF power_VBUS #PWR 0 0 Y Y 1 F P
+DEF power:VBUS #PWR 0 0 Y Y 1 F P
 F0 "#PWR" 0 -150 50 H I C CNN
-F1 "power_VBUS" 0 150 50 H V C CNN
+F1 "power:VBUS" 0 150 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
