@@ -1,4 +1,4 @@
-update=13/01/2021 09:05:20
+update=13/05/2021 15:12:44
 version=1
 last_client=pcbnew
 [general]
@@ -15,11 +15,11 @@ LibDir=
 [pcbnew]
 version=1
 PageLayoutDescrFile=
-LastNetListRead=ESPZEPTO.net
+LastNetListRead=ESPVZEPTO.net
 PadDrill=0
 PadDrillOvalY=0
-PadSizeH=0.3
-PadSizeV=1.3
+PadSizeH=0.25
+PadSizeV=0.875
 PcbTextSizeV=1.5
 PcbTextSizeH=1.5
 PcbTextThickness=0.3

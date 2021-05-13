@@ -1,4 +1,4 @@
-update=Tuesday, 29 December 2020 at 21:21:54
+update=13/05/2021 15:47:42
 version=1
 last_client=kicad
 [general]
@@ -240,3 +240,13 @@ uViaDrill=0.1
 dPairWidth=0.2
 dPairGap=0.25
 dPairViaGap=0.25
+[schematic_editor]
+version=1
+PageLayoutDescrFile=
+PlotDirectoryName=./ESPVZEPTOV1.0
+SubpartIdSeparator=0
+SubpartFirstId=65
+NetFmtName=Pcbnew
+SpiceAjustPassiveValues=0
+LabSize=50
+ERC_TestSimilarLabels=1
